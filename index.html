@@ -127,7 +127,7 @@
                   </h1>
                   <!-- Cart item one -->
                   <div
-                    class="flex justify-between items-center py-4 border-t border-[#CFCFCF] border-opacity-30"
+                    class="flex justify-between items-center py-4 border-t border-[#CFCFCF] border-opacity-30 cart-item"
                   >
                     <div class="flex items-center gap-[10px]">
                       <img
@@ -142,23 +142,23 @@
                         <button
                           class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
                         >
-                          $1799
+                          $ <span class="cart-item-price">1799</span>
                         </button>
                       </div>
                     </div>
                     <div class="h-full flex flex-col">
                       <button
-                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-minus"></i>
                       </button>
                       <p
-                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center"
+                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity"
                       >
                         1
                       </p>
                       <button
-                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-plus"></i>
                       </button>
@@ -166,7 +166,7 @@
                   </div>
                   <!-- Cart item two -->
                   <div
-                    class="flex justify-between items-center py-4 border-y border-[#CFCFCF] border-opacity-30"
+                    class="flex justify-between items-center py-4 border-y border-[#CFCFCF] border-opacity-30 cart-item"
                   >
                     <div class="flex items-center gap-[10px]">
                       <img
@@ -181,23 +181,23 @@
                         <button
                           class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
                         >
-                          $1799
+                          $ <span class="cart-item-price">1799</span>
                         </button>
                       </div>
                     </div>
                     <div class="h-full flex flex-col">
                       <button
-                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-minus"></i>
                       </button>
                       <p
-                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center"
+                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity"
                       >
                         1
                       </p>
                       <button
-                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-plus"></i>
                       </button>
@@ -205,14 +205,10 @@
                   </div>
                   <!-- Cart item three -->
                   <div
-                    class="flex justify-between items-center py-4 border-b border-[#CFCFCF] border-opacity-30"
+                    class="flex justify-between items-center py-4 border-b border-[#CFCFCF] border-opacity-30 cart-item"
                   >
                     <div class="flex items-center gap-[10px]">
-                      <img
-                        src="./assets/Home/cart-item.png"
-                        class=""
-                        alt="cart-item"
-                      />
+                      <img src="./assets/Home/cart-item.png" alt="cart-item" />
                       <div
                         class="text-[12px] leading-[14px] font-[700] space-y-[7px]"
                       >
@@ -220,23 +216,23 @@
                         <button
                           class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
                         >
-                          $1799
+                          $ <span class="cart-item-price">1799</span>
                         </button>
                       </div>
                     </div>
                     <div class="h-full flex flex-col">
                       <button
-                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-minus"></i>
                       </button>
                       <p
-                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center"
+                        class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity"
                       >
                         1
                       </p>
                       <button
-                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center"
+                        class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon disabled:cursor-not-allowed"
                       >
                         <i class="fa-solid fa-plus"></i>
                       </button>
@@ -256,9 +252,11 @@
                     class="flex justify-between items-center py-[16px] border-b border-[#CFCFCF] border-opacity-30 text-[13px] leading-[24px] font-[400]"
                   >
                     <h1 class="opacity-60">Sub-total (Includes taxes)</h1>
-                    <p class="opacity-60">$5397</p>
+                    <p class="opacity-60">
+                      $ <span id="carts-subTotal">5397</span>
+                    </p>
                   </div>
-                  <!-- Total cost section -->
+                  <!-- Total Cost section -->
                   <div
                     class="flex justify-between items-center py-[24px] text-white"
                   >
@@ -266,12 +264,13 @@
                       Total Cost
                     </h1>
                     <p class="text-[16px] leading-[27px] font-[700] text-white">
-                      $5397
+                      $ <span id="carts-total">5397</span>
                     </p>
                   </div>
                   <!-- Checkout button -->
                   <button
                     class="w-full text-[13px] leading-[22px] font-[700] rounded-[300px] border border-[#FCAB00] bg-[#69F6A4] text-[#27213C] py-[11px] hover:bg-[#7ef1ae] duration-200"
+                    id="carts-checkout"
                   >
                     CHECKOUT
                   </button>
@@ -368,12 +367,188 @@
                 >
                   <span class="whitespace-pre">Sign Up</span>
                 </button>
-                <!-- Cart Button -->
-                <button
-                  class="p-[8px_13px] text-[13px] text-[#27213C] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-[#fcb826] duration-200"
-                >
-                  <i class="fa-solid fa-cart-plus h-[15px] w-[18px]"></i>
-                </button>
+                <div class="relative">
+                  <!-- Cart Button -->
+                  <button
+                    class="p-[8px_13px] w-full text-[13px] text-[#27213C] font-[700] border border-[#FCAB00] bg-[#FCAB00] text-center rounded-[300px] hover:bg-[#fcb826] duration-200"
+                    id="open-cart-mobile"
+                  >
+                    <i class="fa-solid fa-cart-plus h-[15px] w-[18px]"></i>
+                  </button>
+                  <div
+                    class="absolute hidden w-[calc(100vw-48px)] z-40 rounded-[12px] -left-4 top-14 border border-[#FCAB00] border-opacity-30 bg-gradient-to-b from-[#5c3e00] via-[#5c3e00] to-[#4a2b1f] px-5 py-[30px]"
+                    id="cart-box-mobile"
+                  >
+                    <h1 class="text-[20px] leading-[24px] font-[700] mb-[30px]">
+                      CART
+                    </h1>
+                    <!-- Cart item one -->
+                    <div
+                      class="flex justify-between items-center py-4 border-t border-[#CFCFCF] border-opacity-30 cart-item-mobile"
+                    >
+                      <div class="flex items-center gap-[10px]">
+                        <img
+                          src="./assets/Home/cart-item.png"
+                          class=""
+                          alt="cart-item"
+                        />
+                        <div
+                          class="text-[12px] leading-[14px] font-[700] space-y-[7px]"
+                        >
+                          <h1 class="">THE VAGABOND ROOFTOP TENT</h1>
+                          <button
+                            class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
+                          >
+                            $ <span class="cart-item-price-mobile">1799</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="h-full flex flex-col">
+                        <button
+                          class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <p
+                          class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity-mobile"
+                        >
+                          1
+                        </p>
+                        <button
+                          class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Cart item two -->
+                    <div
+                      class="flex justify-between items-center py-4 border-y border-[#CFCFCF] border-opacity-30 cart-item-mobile"
+                    >
+                      <div class="flex items-center gap-[10px]">
+                        <img
+                          src="./assets/Home/cart-item.png"
+                          class=""
+                          alt="cart-item"
+                        />
+                        <div
+                          class="text-[12px] leading-[14px] font-[700] space-y-[7px]"
+                        >
+                          <h1 class="">THE VAGABOND ROOFTOP TENT</h1>
+                          <button
+                            class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
+                          >
+                            $ <span class="cart-item-price-mobile">1799</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="h-full flex flex-col">
+                        <button
+                          class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <p
+                          class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity-mobile"
+                        >
+                          1
+                        </p>
+                        <button
+                          class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Cart item three -->
+                    <div
+                      class="flex justify-between items-center py-4 border-b border-[#CFCFCF] border-opacity-30 cart-item-mobile"
+                    >
+                      <div class="flex items-center gap-[10px]">
+                        <img
+                          src="./assets/Home/cart-item.png"
+                          alt="cart-item"
+                        />
+                        <div
+                          class="text-[12px] leading-[14px] font-[700] space-y-[7px]"
+                        >
+                          <h1 class="">THE VAGABOND ROOFTOP TENT</h1>
+                          <button
+                            class="border-0 outline-0 bg-[#00B67A] py-[3px] px-[10px] rounded-[5px]"
+                          >
+                            $ <span class="cart-item-price-mobile">1799</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="h-full flex flex-col">
+                        <button
+                          class="border border-[#CFCFCF] bg-[#262035] text-white h-[21px] w-[21px] flex justify-center items-center cart-minus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <p
+                          class="text-[12px] leading-[14px] font-[800] border border-[#CFCFCF] text-white bg-transparent text-center h-[31px] w-[21px] flex justify-center items-center cart-item-quantity-mobile"
+                        >
+                          1
+                        </p>
+                        <button
+                          class="border border-[#CFCFCF] bg-[#FCAB00] text-[#2E253A] h-[21px] w-[21px] flex justify-center items-center cart-plus-icon-mobile disabled:cursor-not-allowed"
+                        >
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Promo Code section -->
+                    <div
+                      class="flex justify-between items-center py-[26px] border-b border-[#CFCFCF] border-opacity-30"
+                    >
+                      <h1 class="text-[12px] leading-[14px] font-[700]">
+                        HAVE A PROMO CODE
+                      </h1>
+                      <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+                    </div>
+                    <!-- Subtotal Section -->
+                    <div
+                      class="flex justify-between items-center py-[16px] border-b border-[#CFCFCF] border-opacity-30 text-[13px] leading-[24px] font-[400]"
+                    >
+                      <h1 class="opacity-60">Sub-total (Includes taxes)</h1>
+                      <p class="opacity-60">
+                        $ <span id="carts-subTotal-mobile">5397</span>
+                      </p>
+                    </div>
+                    <!-- Total Cost section -->
+                    <div
+                      class="flex justify-between items-center py-[24px] text-white"
+                    >
+                      <h1 class="text-[16px] leading-[27px] font-[400]">
+                        Total Cost
+                      </h1>
+                      <p
+                        class="text-[16px] leading-[27px] font-[700] text-white"
+                      >
+                        $ <span id="carts-total-mobile">5397</span>
+                      </p>
+                    </div>
+                    <!-- Checkout button -->
+                    <button
+                      class="w-full text-[13px] leading-[22px] font-[700] rounded-[300px] border border-[#FCAB00] bg-[#69F6A4] text-[#27213C] py-[11px] hover:bg-[#7ef1ae] duration-200"
+                      id="carts-checkout"
+                    >
+                      CHECKOUT
+                    </button>
+                    <!-- Last section -->
+                    <div class="flex justify-center items-center pt-6">
+                      <div class="flex items-center justify-center gap-[14px]">
+                        <img src="./assets/Home/lock.png" alt="" />
+                        <h2
+                          class="text-[14px] leading-[24px] font-[400] opacity-60"
+                        >
+                          SSL Secure Payment
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2093,82 +2268,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <!-- Script for sliders -->
-    <script type="text/javascript">
-      // Settings for Reviews Slider
-      $(document).on("ready", function () {
-        $(".regular").slick({
-          centerMode: false,
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          prevArrow: $(".prev-arrow"),
-          nextArrow: $(".next-arrow"),
-          responsive: [
-            {
-              breakpoint: 1900, // Large devices breakpoint
-              settings: {
-                slidesToShow: 4,
-              },
-            },
-            {
-              breakpoint: 1400, // Large devices breakpoint
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 900, // Medium devices breakpoint
-              settings: {
-                slidesToShow: 2,
-              },
-            },
-            {
-              breakpoint: 600, // Mobile devices breakpoint
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-      });
-
-      // Settings for Blogs Slider
-      $(document).on("ready", function () {
-        $(".blogs").slick({
-          centerMode: false,
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1900, // Large devices breakpoint
-              settings: {
-                slidesToShow: 4,
-              },
-            },
-            {
-              breakpoint: 1400, // Large devices breakpoint
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 900, // Medium devices breakpoint
-              settings: {
-                slidesToShow: 2,
-              },
-            },
-            {
-              breakpoint: 600, // Mobile devices breakpoint
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-      });
-    </script>
+    <!-- JS File -->
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
