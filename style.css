@@ -1,0 +1,170 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll bar design for category menu*/
+#mobile-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+#mobile-menu::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 4px; /* You can change this color to your preference */
+}
+
+#mobile-menu::-webkit-scrollbar-thumb {
+  background-color: #241f36; /* You can change this color to your preference */
+  border-radius: 4px;
+}
+
+/* Scroll bar design for filtering menu*/
+#filtering-menu::-webkit-scrollbar,
+#experience::-webkit-scrollbar {
+  display: none;
+}
+
+/* CSS For category menu */
+.selected-category {
+  border-left: 2px solid;
+  border-color: #fcab00;
+  background-color: #1d182d;
+}
+.selected-category-mobile {
+  border-left: 2px solid;
+  border-color: #fcab00;
+  background-color: #1d182d;
+}
+
+/* CSS For filer button element */
+.selected {
+  background-color: #fcab00;
+  color: #27213c;
+}
+
+/* CSS for home page banner section */
+.home-banner {
+  background-image: url("./assets/Home/Polygon.png"),
+    url("./assets/Home/Polygon.png"), url("./assets/Home/Polygon.png"),
+    url("./assets/Home/Polygon-2.png"), url("./assets/Home/Polygon-3.png");
+  background-repeat: no-repeat;
+  background-position: left -10px, left -110px, left -220px, right bottom,
+    right -125px;
+}
+.more-about-us {
+  background-image: url("./assets/Home/Polygon-2.png"),
+    url("./assets/Home/Polygon-3.png");
+  background-repeat: no-repeat;
+  background-position: right -80px, right -100px;
+}
+.main-items {
+  background-image: url("./assets/Home/Polygon.png"),
+    url("./assets/Home/Polygon.png"), url("./assets/Home/Polygon.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, left bottom 100px, left bottom 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .home-banner,
+  .more-about-us,
+  .main-items {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: none;
+  }
+}
+
+/* footer CSS Section */
+/* footer */
+.footer {
+  width: 100%;
+  height: 349.595px;
+  border-top: 1px solid #fcab00;
+  background: #fcab00;
+}
+
+.firstGrid {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.imageName {
+  width: 152.689px;
+  height: 37.493px;
+}
+
+.icon {
+  width: 44px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #29202b;
+  color: #fff;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  padding: 3px 0px 0px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.optionTitle {
+  color: rgba(0, 0, 0, 0.56);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.options a {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.address {
+  color: rgba(0, 0, 0, 0.56);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+  /* footer */
+  .footer {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .firstGrid {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .address {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .options1 {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+}
