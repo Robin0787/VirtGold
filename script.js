@@ -131,31 +131,56 @@ for (let i = 0; i < cartPlusIconButtons.length; i++) {
 }
 
 // Calculating Total
-function calculateTotal () {
-  const cartsTotalField = document.querySelector('#carts-total');
-  const cartItems = document.querySelectorAll('.cart-item');
+function calculateTotal() {
+  const cartsTotalField = document.querySelector("#carts-total");
+  const cartItems = document.querySelectorAll(".cart-item");
   let total = 0;
-  for(let i=0; i<cartItems.length; i++) {
-    const itemPrice = parseInt(cartItems[i].querySelector('.cart-item-price').innerText);
-    const itemQuantity = parseInt(cartItems[i].querySelector('.cart-item-quantity').innerText);
+  for (let i = 0; i < cartItems.length; i++) {
+    const itemPrice = parseInt(
+      cartItems[i].querySelector(".cart-item-price").innerText
+    );
+    const itemQuantity = parseInt(
+      cartItems[i].querySelector(".cart-item-quantity").innerText
+    );
     total += itemPrice * itemQuantity;
   }
   cartsTotalField.innerText = total;
 }
 
 // Calculating SubTotal
-function calculateSubTotal () {
-  const cartsSubTotalField = document.querySelector('#carts-subTotal');
-  const cartItems = document.querySelectorAll('.cart-item');
+function calculateSubTotal() {
+  const cartsSubTotalField = document.querySelector("#carts-subTotal");
+  const cartItems = document.querySelectorAll(".cart-item");
   let subTotal = 0;
-  for(let i=0; i<cartItems.length; i++) {
-    const itemPrice = parseInt(cartItems[i].querySelector('.cart-item-price').innerText);
-    const itemQuantity = parseInt(cartItems[i].querySelector('.cart-item-quantity').innerText);
+  for (let i = 0; i < cartItems.length; i++) {
+    const itemPrice = parseInt(
+      cartItems[i].querySelector(".cart-item-price").innerText
+    );
+    const itemQuantity = parseInt(
+      cartItems[i].querySelector(".cart-item-quantity").innerText
+    );
     subTotal += itemPrice * itemQuantity;
   }
   cartsSubTotalField.innerText = subTotal;
 }
 
+
+// Adding promo code field in large device
+
+const addPromoCodeBtn = document.getElementById('add-promo-code');
+addPromoCodeBtn.addEventListener('click', () => {
+  const promoCodeField = document.getElementById('promo-code-field');
+  promoCodeField.classList.toggle('hidden');
+});
+
+
+// Adding promo code field in Mobile device
+
+const addPromoCodeBtnMobile = document.getElementById('add-promo-code-mobile');
+addPromoCodeBtnMobile.addEventListener('click', () => {
+  const promoCodeFieldMobile = document.getElementById('promo-code-field-mobile');
+  promoCodeFieldMobile.classList.toggle('hidden');
+});
 
 // Cart Box in Large device ----- Cart Box in Large device ----- Cart Box in Large device -----//
 // ----- END ---------- END ---------- END ------------- END ----------- END ---------END ----//
@@ -166,17 +191,25 @@ function calculateSubTotal () {
 // ----- START ---------- START ---------- START ------------- START ----------- START --------//
 
 // Toggling cart In Mobile device
-const openCartMobileButton = document.getElementById('open-cart-mobile');
-openCartMobileButton.addEventListener('click', () => {
-  const cartBoxMobile = document.getElementById('cart-box-mobile');
-  cartBoxMobile.classList.toggle('hidden');
+const openCartMobileButton = document.getElementById("open-cart-mobile");
+openCartMobileButton.addEventListener("click", () => {
+  const cartBoxMobile = document.getElementById("cart-box-mobile");
+  cartBoxMobile.classList.toggle("hidden");
 });
 
 // Increasing cart items and calculating sub-total and total price In Mobile
-const cartMinusIconButtonsMobile = document.querySelectorAll(".cart-minus-icon-mobile");
-const cartPlusIconButtonsMobile = document.querySelectorAll(".cart-plus-icon-mobile");
-const cartItemQuantityFieldsMobile = document.querySelectorAll(".cart-item-quantity-mobile");
-const cartItemsPriceMobile = document.querySelectorAll(".cart-item-price-mobile");
+const cartMinusIconButtonsMobile = document.querySelectorAll(
+  ".cart-minus-icon-mobile"
+);
+const cartPlusIconButtonsMobile = document.querySelectorAll(
+  ".cart-plus-icon-mobile"
+);
+const cartItemQuantityFieldsMobile = document.querySelectorAll(
+  ".cart-item-quantity-mobile"
+);
+const cartItemsPriceMobile = document.querySelectorAll(
+  ".cart-item-price-mobile"
+);
 
 // For Cart Minus Button In Mobile
 for (let i = 0; i < cartMinusIconButtonsMobile.length; i++) {
@@ -225,39 +258,43 @@ for (let i = 0; i < cartPlusIconButtonsMobile.length; i++) {
 }
 
 // Calculating Total In Mobile
-function calculateTotalMobile () {
-  const cartsTotalField = document.querySelector('#carts-total-mobile');
-  const cartItemsMobile = document.querySelectorAll('.cart-item-mobile');
+function calculateTotalMobile() {
+  const cartsTotalField = document.querySelector("#carts-total-mobile");
+  const cartItemsMobile = document.querySelectorAll(".cart-item-mobile");
   let total = 0;
-  for(let i=0; i<cartItemsMobile.length; i++) {
-    const itemPrice = parseInt(cartItemsMobile[i].querySelector('.cart-item-price-mobile').innerText);
-    const itemQuantity = parseInt(cartItemsMobile[i].querySelector('.cart-item-quantity-mobile').innerText);
+  for (let i = 0; i < cartItemsMobile.length; i++) {
+    const itemPrice = parseInt(
+      cartItemsMobile[i].querySelector(".cart-item-price-mobile").innerText
+    );
+    const itemQuantity = parseInt(
+      cartItemsMobile[i].querySelector(".cart-item-quantity-mobile").innerText
+    );
     total += itemPrice * itemQuantity;
   }
   cartsTotalField.innerText = total;
 }
 
 // Calculating SubTotal In Mobile
-function calculateSubTotalMobile () {
-  const cartsSubTotalFieldMobile = document.querySelector('#carts-subTotal-mobile');
-  const cartItemsMobile = document.querySelectorAll('.cart-item-mobile');
+function calculateSubTotalMobile() {
+  const cartsSubTotalFieldMobile = document.querySelector(
+    "#carts-subTotal-mobile"
+  );
+  const cartItemsMobile = document.querySelectorAll(".cart-item-mobile");
   let subTotal = 0;
-  for(let i=0; i<cartItemsMobile.length; i++) {
-    const itemPrice = parseInt(cartItemsMobile[i].querySelector('.cart-item-price-mobile').innerText);
-    const itemQuantity = parseInt(cartItemsMobile[i].querySelector('.cart-item-quantity-mobile').innerText);
+  for (let i = 0; i < cartItemsMobile.length; i++) {
+    const itemPrice = parseInt(
+      cartItemsMobile[i].querySelector(".cart-item-price-mobile").innerText
+    );
+    const itemQuantity = parseInt(
+      cartItemsMobile[i].querySelector(".cart-item-quantity-mobile").innerText
+    );
     subTotal += itemPrice * itemQuantity;
   }
   cartsSubTotalFieldMobile.innerText = subTotal;
 }
 
-
-
-
 // Cart Box in Mobile device ----- Cart Box in Mobile device ----- Cart Box in Mobile device -----//
 // -------- END ----------- END ------------ END ------------- END ------------ END --------//
-
-
-
 
 // ----------Navbar Menu in Mobile device ----------- Navbar Menu in Mobile device ------------//
 // ----- Start ---------- Start ---------- Start ------------- Start ----------- Start ------- //
@@ -1959,3 +1996,65 @@ $(document).on("ready", function () {
     ],
   });
 });
+
+// Reviews Sections arrow icons functionality
+
+const arrows = document.querySelectorAll(".arrows");
+
+for (let i = 0; i < arrows.length; i++) {
+  arrows[i].addEventListener("click", (event) => {
+    arrows.forEach((item) => item.classList.add("opacity-40"));
+    event.currentTarget.classList.toggle("opacity-40");
+  });
+}
+
+// Featured boxes Slider and Image changes Functionality
+const featuredImages = ['https://i.ibb.co/q13ysfy/Rectangle-11.png', 'https://i.ibb.co/CJTZvsd/featured-iamge-2.webp', 'https://i.ibb.co/q13ysfy/Rectangle-11.png'];
+
+const featuredImageElement = document.getElementById('featured-image');
+const featureBoxes = document.querySelectorAll(".feature-box");
+let elementIndex = 0;
+
+// Selecting active featured box based on user clicked;
+for(let i=0; i<featureBoxes.length; i++){
+  featureBoxes[i].addEventListener('click', () => {
+    elementIndex = i;
+    activeFeatureBox(featureBoxes[i], elementIndex);
+  });
+}
+
+function selectActiveFeatureBox(){
+  if(elementIndex > 2){
+    elementIndex = 0;
+    activeFeatureBox(featureBoxes[elementIndex], elementIndex);
+    elementIndex++;
+  }else {
+    activeFeatureBox(featureBoxes[elementIndex], elementIndex);
+    elementIndex++;
+  }
+}
+
+selectActiveFeatureBox();
+setInterval(() => selectActiveFeatureBox(), 3200);
+
+function activeFeatureBox(featureBox, elementIndex) {
+  clearClasses();
+  featuredImageElement.setAttribute('src', featuredImages[elementIndex]);
+  featureBox.classList.remove("feature-box-bg-not-active");
+  featureBox.classList.add("feature-box-bg-active");
+  const innerBox = featureBox.querySelector("#feature-inner-box");
+  innerBox.classList.remove("feature-box-border");
+  innerBox.classList.add("feature-box-loader");
+}
+
+function clearClasses() {
+  featureBoxes.forEach((box) => {
+    box.classList.remove("feature-box-bg-active");
+    box.classList.add("feature-box-bg-not-active");
+    const innerBox = box.querySelector("#feature-inner-box");
+    innerBox.classList.remove("feature-box-loader");
+    innerBox.classList.add("feature-box-border");
+  });
+}
+
+
